@@ -50,10 +50,11 @@ Competição: https://www.kaggle.com/competitions/centrale-lille-decathlon-forec
 - [x] Importância das features (log_stores domina)
 
 ## 6. Deep learning simples: LSTM
-- [ ] Normalizar os dados e criar janelas (sequências de entrada → saída)
-- [ ] LSTM simples (1–2 camadas)
-- [ ] Early stopping, ajuste de tamanho de janela e unidades
-- [ ] Comparar com ML e clássicos
+- [x] LSTM sobre a sequência de features conhecidas (calendário + log n_stores), janelas de 40 semanas
+- [x] 1 camada de 16 neurônios, ensemble de 5 seeds, 300 épocas
+- [x] Sensibilidade a janela × neurônios (MSE entre ≈ 363 e 406 mil)
+- [x] LSTM – MSE ≈ 363 mil (melhor que baseline e árvores, pior que SARIMAX)
+- [ ] MLP (não feito, só o LSTM foi pedido)
 
 ## 7. Deep learning mais complexo: TFT (Temporal Fusion Transformer)
 - [ ] Preparar o dataset no formato da biblioteca (pytorch-forecasting ou darts)
