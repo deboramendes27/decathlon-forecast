@@ -11,3 +11,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 .vscode/
+
+# Logs do PyTorch Lightning
+lightning_logs/

@@ -60,11 +60,10 @@ Competição: https://www.kaggle.com/competitions/centrale-lille-decathlon-forec
 - [x] LSTM regularizado (dropout, rede menor, weight decay, menos épocas) – MSE ≈ 325 mil
 - [ ] MLP (não feito, só o LSTM foi pedido)
 
-## 7. Deep learning mais complexo: TFT (Temporal Fusion Transformer)
-- [ ] Preparar o dataset no formato da biblioteca (pytorch-forecasting ou darts)
-- [ ] Treinar o TFT com covariáveis conhecidas no futuro (calendário) e passadas
-- [ ] Interpretar a atenção / importância de variáveis
-- [ ] Comparar com os outros modelos
+## 7. Deep learning avançado: TFT e N-HiTS (pytorch-forecasting)
+- [x] TFT em série única, encoder de 4 semanas – MSE ≈ 443 mil (pior que o naïf)
+- [x] N-HiTS em série única – MSE ≈ 1,89 mi (só 7 janelas de treino, prevê ≈ 0)
+- [x] Teste global nas 55 lojas (fora do notebook): N-HiTS ≈ 1,58 mi, TFT ≈ 507 mil – sem ganho
 
 ## 8. Comparação, ensemble e submissão final
 - [x] Ensemble SARIMAX + XGBoost reg. + LSTM reg. – MSE ≈ 273 mil (melhor na validação)
