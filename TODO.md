@@ -33,12 +33,12 @@ Competição: https://www.kaggle.com/competitions/centrale-lille-decathlon-forec
 - [ ] Primeira submissão no Kaggle com o melhor baseline
 
 ## 4. Métodos clássicos: ARIMA / SARIMA
-- [ ] ARIMA com parâmetros a partir do ACF/PACF
-- [ ] SARIMA com sazonalidade (semanal e/ou anual)
-- [ ] `auto_arima` (pmdarima) para busca de parâmetros
-- [ ] Opcional: SARIMAX com variáveis exógenas
-- [ ] Análise dos resíduos (Ljung-Box)
-- [ ] Comparar com os baselines
+- [x] ARIMA (ordem por AIC) – MSE ≈ 1,9 mi, inadequado
+- [x] SARIMAX: AR(1) + const. no log, exógenas n_stores + Fourier + pré-Natal – MSE ≈ 307 mil
+- [x] Seleção de ordem e exógenas por AIC (statsmodels)
+- [x] Teste de sensibilidade d=1 vs d=0
+- [x] Análise dos resíduos (Ljung-Box)
+- [x] Comparar com os baselines (SARIMAX −25% de MSE)
 
 ## 5. Métodos simples de ML: Random Forest / XGBoost
 - [ ] Feature engineering:
