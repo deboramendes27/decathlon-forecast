@@ -24,7 +24,9 @@ pip install -r requirements.txt
 ```
 
 ## Como contribuir
-A branch `main` é protegida: **não é possível fazer push direto nela**.
-1. Crie uma branch: `git checkout -b nome-da-tarefa`
-2. Faça commits e envie a branch: `git push -u origin nome-da-tarefa`
-3. Abra um Pull Request no GitHub. Ele só entra na `main` depois da aprovação da Débora.
+**Regra do grupo: ninguém faz push direto na `main`.** Toda mudança passa por Pull Request
+e só entra na `main` depois da aprovação da Débora.
+1. Atualize sua cópia: `git checkout main` e `git pull`
+2. Crie uma branch: `git checkout -b nome-da-tarefa`
+3. Faça commits e envie a branch: `git push -u origin nome-da-tarefa`
+4. Abra um Pull Request no GitHub e peça a revisão da Débora (`deboramendes27`).
