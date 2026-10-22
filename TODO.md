@@ -41,15 +41,13 @@ Competição: https://www.kaggle.com/competitions/centrale-lille-decathlon-forec
 - [x] Comparar com os baselines (SARIMAX −25% de MSE)
 
 ## 5. Métodos simples de ML: Random Forest / XGBoost
-- [ ] Feature engineering:
-  - [ ] Features de calendário (dia da semana, mês, semana do ano, feriados, férias)
-  - [ ] Lags (t-1, t-7, t-52…) e janelas móveis (média, desvio)
-  - [ ] Variáveis externas disponíveis
-- [ ] Random Forest
-- [ ] XGBoost (e/ou LightGBM)
-- [ ] Estratégia de previsão multi-passo (recursiva vs. direta)
-- [ ] Tuning de hiperparâmetros com a validação temporal
-- [ ] Importância das features
+- [x] Features conhecidas no futuro: semana da temporada, semanas até o Natal / desde a Black Friday, férias zona C, log(n_stores)
+- [x] Lags não usados (o lag 52 não existe para a 1ª temporada, que é todo o treino do fold)
+- [x] Previsão direta das 40 semanas (sem recursão)
+- [x] Random Forest – MSE ≈ 368 mil
+- [x] XGBoost – MSE ≈ 371 mil
+- [x] Hiperparâmetros fixos (sem tuning: só 50 semanas de treino no fold)
+- [x] Importância das features (log_stores domina)
 
 ## 6. Deep learning simples: LSTM
 - [ ] Normalizar os dados e criar janelas (sequências de entrada → saída)
