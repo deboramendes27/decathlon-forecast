@@ -1,0 +1,24 @@
+# Base
+pandas
+numpy
+matplotlib
+seaborn
+jupyter
+kaggle
+ipykernel
+pypdf
+
+# Estatística / métodos clássicos
+statsmodels
+pmdarima
+holidays
+
+# ML
+scikit-learn
+xgboost
+lightgbm
+
+# Deep learning
+torch
+lightning
+pytorch-forecasting

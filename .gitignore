@@ -1,0 +1,13 @@
+# Ambiente Python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Material da Decathlon marcado como confidencial ("No sharing allowed")
+*.pdf
+
+# Sistema / editor
+.DS_Store
+Thumbs.db
+.vscode/
