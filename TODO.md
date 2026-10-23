@@ -69,6 +69,7 @@ Competição: https://www.kaggle.com/competitions/centrale-lille-decathlon-forec
 - [x] Chronos-2 zero-shot: só histórico MSE ≈ 1,11 mi; com covariáveis ≈ 376 mil
 - [x] XGBoost regularizado por loja (55 modelos somados): MSE ≈ 298 mil – melhor modelo individual
 - [x] Variante com indicador de atividade da loja: ≈ 314 mil (não ajuda)
+- [x] LSTM global nas 55 lojas com embedding de loja: 150 épocas ≈ 328 mil (decora); 60 épocas ≈ 297 mil (≈ XGBoost por loja)
 
 ## 8. Comparação final (modelos individuais, sem ensemble)
 - [x] Tabela comparativa de todos os modelos (mesma validação, mesma métrica) – seção 7.1
