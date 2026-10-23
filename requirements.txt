@@ -22,3 +22,4 @@ lightgbm
 torch
 lightning
 pytorch-forecasting
+chronos-forecasting

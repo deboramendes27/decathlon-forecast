@@ -65,13 +65,16 @@ Competição: https://www.kaggle.com/competitions/centrale-lille-decathlon-forec
 - [x] N-HiTS em série única – MSE ≈ 1,89 mi (só 7 janelas de treino, prevê ≈ 0)
 - [x] Teste global nas 55 lojas (fora do notebook): N-HiTS ≈ 1,58 mi, TFT ≈ 507 mil – sem ganho
 
-## 8. Comparação, ensemble e submissão final
-- [x] Ensemble SARIMAX + XGBoost reg. + LSTM reg. – MSE ≈ 273 mil (melhor na validação)
-- [ ] Tabela comparativa de todos os modelos (mesma validação, mesma métrica)
-- [ ] Gráfico real vs. previsto para os melhores modelos
-- [ ] Testar ensemble (média dos melhores modelos)
-- [ ] Re-treinar o modelo final com todos os dados
-- [ ] Gerar a submissão final no formato correto
+## 7b. Modelo pré-treinado e ML por loja
+- [x] Chronos-2 zero-shot: só histórico MSE ≈ 1,11 mi; com covariáveis ≈ 376 mil
+- [x] XGBoost regularizado por loja (55 modelos somados): MSE ≈ 298 mil – melhor modelo individual
+- [x] Variante com indicador de atividade da loja: ≈ 314 mil (não ajuda)
+
+## 8. Comparação final (modelos individuais, sem ensemble)
+- [x] Tabela comparativa de todos os modelos (mesma validação, mesma métrica) – seção 7.1
+- [x] Gráficos real vs. previsto em cada etapa
+- [x] Ensemble e células de submissão removidos: só os notebooks serão entregues
+- [ ] Escolha final do modelo (seção 7.2)
 
 ## 9. Entrega
 - [ ] Limpar e comentar os notebooks
