@@ -71,6 +71,16 @@ Competição: https://www.kaggle.com/competitions/centrale-lille-decathlon-forec
 - [x] Variante com indicador de atividade da loja: ≈ 314 mil (não ajuda)
 - [x] LSTM global nas 55 lojas com embedding de loja: 150 épocas ≈ 328 mil (decora); 60 épocas ≈ 297 mil (≈ XGBoost por loja)
 
+## 7c. Otimizações (seção 10 do notebook)
+- [x] Alvo alinhado ao MSE testado e removido do notebook (piorava os modelos)
+- [x] Meteorologia Open-Meteo/ERA5 (Paris): SARIMAX ≈ 147 mil (−52 %), XGBoost por loja ≈ 247 mil, LSTM global ≈ 274 mil
+- [x] Clima local das 10 maiores lojas testado e removido do notebook (não melhorava)
+- [x] Clima enriquecido (graus-dia, semana fria, neve, 1ª onda de frio): SARIMAX ≈ 88 mil (−71 %), robusto nos folds A e B
+- [x] Férias de inverno zonas A/B (data.education.gouv.fr): neutro no XGBoost, piora o SARIMAX
+- [x] Ponderação das semanas recentes: piora em todos os folds (descartada)
+- [x] Clima + férias no LSTM global (instável) e no Chronos-2 (−46 % / −54 %)
+- [ ] Confirmar se o regulamento Kaggle permite dados externos
+
 ## 8. Comparação final (modelos individuais, sem ensemble)
 - [x] Tabela comparativa de todos os modelos (mesma validação, mesma métrica) – seção 7.1
 - [x] Gráficos real vs. previsto em cada etapa
